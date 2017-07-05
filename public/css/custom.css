@@ -1,0 +1,66 @@
+.noUppercase
+{
+	text-transform: none !important;
+}
+.fullScreenImage
+{
+	width: 100%;
+	height: 90%;
+}
+.halfScreenImage
+{
+	width: 80%;
+	height: 60%;
+}
+.reveal h1.upholdHeader, h2.upholdHeader{
+	margin-top: -50px;
+	margin-left: -15%;
+	width: 130%;
+}
+.mediumFont{
+	font-size: 2em;
+}
+
+.reveal code.largeCode {
+	max-height: 600px;
+}
+
+
+.greenBold{
+	color: green;
+	font-weight: bold !important;
+}
+.lineThrough{
+	text-decoration: line-through;					
+}
+.redBoldText{
+	font-weight: bold !important;
+	color: red !important;
+}
+.purpleBold{
+	font-weight: bold;
+	color:purple;
+}	
+pre code{
+	text-align: left;
+}
+.hide{
+	display: none;
+}			
+.animate_block {
+	position: absolute;
+	background-color: blue;
+	width: 50px;
+	height: 40px;
+	padding-top: 10px;
+	color: #fff;
+	font-size: 10px;
+	white-space: nowrap;
+	left:0px;
+}
+ul.nolist li{
+	list-style: none;
+}
+.center{
+	text-align: center;
+}
