@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        class MyComponent extends React.Component{
+            render(){
+                return (
+                    <div> 
+                        <h1 title="Look mom! I have a tool tip">Hello React </h1>
+                        <Greetings name="David"/>
+                        <Greetings name="Jacky"/>
+                        <Greetings name="Summer"/>
+                    </div>
+                )
+            }
+        }
+
+        class Greetings extends React.Component{
+            render(){
+                return <h3>Good to See you: {this.props.name}</h3>
+            }
+        }
+
+        ReactDOM.render(<MyComponent/>, document.getElementById('root'));
+
+    </script>
+  </body>
+</html>

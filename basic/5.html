@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@latest/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@latest/dist/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+
+        class MyComponent extends React.Component{
+            constructor(){
+                super();
+                this.state={
+                    count:0,
+                    searchText:'',
+                    users:[]
+                }
+                this.handleClick = this.handleClick.bind(this);
+                this.handleChange = this.handleChange.bind(this);
+            }
+
+            loadData(){
+                const url = `https://api.github.com/search/users?q=eric`;
+                fetch(url).then(res=> res.json())
+                .then(data=>{
+                    const first10 = data.items.slice(0,10).map(user =>{
+                        return{
+                            name:user.login,
+                            url:user.html_url
+                        }
+                    });
+
+                    this.setState({
+                        users:first10
+                    });
+                })
+            }
+
+            componentDidMount(){
+                this.loadData();
+            }
+            
+            handleClick(){
+                console.log('clicked', this.state.count);
+                var newCount = this.state.count + 1;
+                this.setState({
+                    count:newCount
+                })
+            }
+
+            handleChange(e){
+                console.log(e.target.value);
+                this.setState({
+                    searchText: e.target.value
+                })
+            }
+
+            render(){
+                return (
+                    <div> 
+                        <h1 title="Look mom! I have a tool tip">Hello React </h1>
+                        <h3>Clicked:{this.state.count}</h3>
+                        <h4>search: {this.state.searchText}</h4>
+                        <input onChange={this.handleChange}/>
+                        <button onClick={this.handleClick}>Click Me</button>
+                        <ul>
+                            {this.state.users.map(user=>{
+                                return <li key={user.name}><a href={user.url}>{user.name}</a></li>
+                            })}
+                        </ul>
+                    </div>
+                )
+            }
+        }
+
+        class Greetings extends React.Component{
+            render(){
+                return <h3>Good to See you: {this.props.name}</h3>
+            }
+        }
+
+        ReactDOM.render(<MyComponent/>, document.getElementById('root'));
+
+    </script>
+  </body>
+</html>

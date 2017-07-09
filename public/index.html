@@ -22,11 +22,11 @@
 		<link rel="stylesheet" href="css/custom.css">
 		<!-- Printing and PDF exports -->
 		<script>
-			var link = document.createElement( 'link' );
+			var link = document.createElement('link');
 			link.rel = 'stylesheet';
 			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+			link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName('head')[0].appendChild(link);
 		</script>
 
 		<!--[if lt IE 9]>
@@ -74,7 +74,7 @@
 								<li>extension</li>
 								<li></li>
 							</ul>
-						</li>						
+						</li>
 					</ul>
 				</section>
 
@@ -126,7 +126,7 @@
 									<li>JSX</li>
 								</ul>
 							</li>
-							<li class="fragment ">Mount Component on index.html</li>							
+							<li class="fragment ">Mount Component on index.html</li>
 						</ul>
 					</section>
 					<section>
@@ -138,7 +138,7 @@
 							<li></li>
 							<li></li>
 						</ul>
-					</section>					
+					</section>
 				</section>
 				<section>
 					<section>
@@ -146,10 +146,17 @@
 					</section>
 					<section>
 						<h2>What is a component</h2>
-					</section>				
+					</section>
 					<section>
-						
-					</section>	
+						<img src="./img/koala.png" alt="">
+					</section>
+					<section>
+						<ul>
+							<li>Repeatable unit</li>
+							<li>Grouping</li>
+							<li>Organizing Unit</li>
+						</ul>
+					</section>
 					<section>
 						<h2>Code a few more component</h2>
 					</section>
@@ -162,35 +169,35 @@
 				</section>
 
 				<section>
-					<h2></h2>					
+					<h2></h2>
 				</section>
 
 				<section>
-					
+
 				</section>
 
 				<section>
-					
+
 				</section>
 
 				<section>
-					
+
 				</section>
 
 				<section>
 					<h2>Transition Styles</h2>
-					
+
 				</section>
 
 				<section>
-					
+
 				</section>
 
 				<section>
-					
+
 				</section>
 
-				
+
 				<section>
 					<h2>Pretty Code</h2>
 					<pre><code class="hljs" data-trim contenteditable>
@@ -212,7 +219,7 @@ function linkify( selector ) {
 					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
 
-				
+
 
 				<section>
 					<h2>Clever Quotes</h2>
@@ -221,23 +228,23 @@ function linkify( selector ) {
 						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
 					</p>
 					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce
+						the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
 					</blockquote>
 				</section>
 
 				<section>
 					<h2>Take a Moment</h2>
 					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
+						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting
+						slides off the screen.
 					</p>
 				</section>
 
 				<section>
 					<h1>THE END</h1>
 					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+						- <a href="http://slides.com">Try the online editor</a> <br> - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
 					</p>
 				</section>
 
@@ -249,7 +256,6 @@ function linkify( selector ) {
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
@@ -261,16 +267,16 @@ function linkify( selector ) {
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
-
 		</script>
 
 	</body>
+
 </html>
