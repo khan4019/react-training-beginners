@@ -10,3 +10,7 @@
 .item-description{
     display: flex;
 }
+
+.star-rating{
+    color:#ffbd00;
+}

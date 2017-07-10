@@ -4,6 +4,14 @@ import laptops from './laptop';
 
 const fakeData = [...androids, ...cameras, ...laptops];
 
+const updated = laptops.map(item => {
+    const rate = (item.star) ? parseFloat(item.star[0]) : 0;
+    item.star = rate;
+    
+    return item;
+})
+console.log(JSON.stringify(updated));
+
 const shuffle = a => {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
