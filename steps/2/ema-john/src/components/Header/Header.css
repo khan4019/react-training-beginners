@@ -11,6 +11,7 @@ nav li {
     list-style: none;
     display: inline-block;
     padding: 5px 20px;
+    color: white;
     float: left;
 }
 
@@ -20,8 +21,8 @@ nav li:hover{
 }
 
 nav a{
-    color: white;
     text-decoration: none;
+    color: white;
 }
 
 nav a:visited{
