@@ -1,3 +1,29 @@
 .header img{
     height: 80px;
 }
+
+nav {   
+    height:40px;  
+    background-color:#232f3e;
+}  
+
+nav ul{
+    list-style-type:none;  
+}
+
+nav li {  
+    float:left;
+    line-height:30px;  
+}  
+nav li a {  
+    padding: 5px 20px;  
+    color:white;  
+    text-decoration:none;  
+}  
+nav li a:hover {  
+    background-color: gray; 
+} 
+
+nav li a:visited{
+    color: white;
+}
