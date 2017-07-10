@@ -4,6 +4,7 @@ import laptops from './laptop';
 
 const fakeData = [...androids, ...cameras, ...laptops];
 
+
 const shuffle = a => {
     for (let i = a.length; i; i--) {
         let j = Math.floor(Math.random() * i);
