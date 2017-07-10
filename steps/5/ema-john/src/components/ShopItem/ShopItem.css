@@ -1,0 +1,12 @@
+.item{
+    display: flex;
+    text-align: left;
+}
+
+.item img{
+    margin: 20px;
+}
+
+.item-description{
+    display: flex;
+}
