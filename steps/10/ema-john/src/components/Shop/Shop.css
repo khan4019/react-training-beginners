@@ -1,0 +1,16 @@
+.shop-container{
+    display: flex;
+    margin-left: 200px;    
+}
+
+.item-container{
+    width: 80%;
+    border-right: 1px solid gray;
+}
+.cart-container{
+    width: 20%;
+}
+
+.item-description h4{
+    text-align: center;
+}
