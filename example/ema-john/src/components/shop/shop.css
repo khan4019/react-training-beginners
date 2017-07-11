@@ -1,0 +1,49 @@
+
+.search-input{
+  width: 80%;
+  line-height: 22px;
+  font-size: 17px;
+}
+
+.search-container {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.shop-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.shop-container:first-child{
+  width: 80%;
+}
+.shop-container > div:last-child{
+  width: 20%;
+  min-width: 200px;
+  border-left: 1px solid gray;
+  margin-top: 20px;
+  padding-left: 5px;
+}
+
+.items-container{
+  margin-left: 200px;
+}
+
+.cart {
+    color: #f08804;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.cart:before {
+    font-family: FontAwesome;
+    margin-top:-30px;
+    margin-right:-5px;
+    color:white;
+    font-size: 24px;
+    padding-right:10px;
+    content: "\f07a"; 
+}

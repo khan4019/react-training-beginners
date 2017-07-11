@@ -1,0 +1,30 @@
+table{
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.total-row{
+    color: #b12704;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    border-top: 1px solid gray;
+    margin-top: 5px;
+}
+
+
+button{
+    background-color:#f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    width: 200px;
+    height: 26px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    vertical-align: middle;
+    
+}
+

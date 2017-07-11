@@ -1,0 +1,32 @@
+.header img{
+    height: 80px;
+}
+
+nav {   
+    height:30px;  
+    background-color:#232f3e;  
+    font-family:Arial;  
+    font-size:0.9em;  
+}  
+nav li {  
+    float:left;  
+    height:30px;  
+    line-height:30px;  
+    list-style-type:none;  
+}  
+nav li a {  
+    display:block; 
+    font-size: 16px;
+    color:inherit; 
+    padding:0 20px;  
+    color:white;  
+    text-decoration:none;  
+    list-style-type:none;  
+}  
+nav li a:hover {  
+    background-color: gray; 
+} 
+
+nav li a:visited{
+    color: white;
+}
