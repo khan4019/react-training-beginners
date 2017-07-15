@@ -1,0 +1,25 @@
+.cart-item{
+    text-align: left;
+    padding-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+    margin-right: 10px;
+}
+.cart-item h4{
+    font-weight: 400;
+    color: blue;
+}
+
+.cart-item-container{
+    display: flex;
+}
+
+.cart-item-description{
+    width: 50%;
+}
+
+.cart-item .price{
+    color: #b12704;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19px;
+}

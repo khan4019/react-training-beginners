@@ -1,0 +1,47 @@
+.item{
+    display: flex;
+    text-align: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
+}
+.item img{
+    margin-right: 10px;
+}
+.item-header{
+    text-align: left;
+}
+
+.item-header{
+    color:blue;
+    font-weight: 400;
+}
+
+.item-description{
+    display: flex;
+}
+
+.item-description > div{
+    width: 50%;
+}
+
+.item-description li{
+    font-size: 12px;
+    color: gray;
+}
+
+.ratings{
+    color:#ffbd00;
+}
+
+button{
+    background-color:#f0c14b;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    width: 200px;
+    height: 26px;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    border-radius: 3px;
+    vertical-align: middle;
+}
