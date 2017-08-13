@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>Advanced React</title>
+	<title>React Training</title>
 
 	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 	<meta name="author" content="Hakim El Hattab">
@@ -41,21 +41,8 @@
 		<!-- Any section element inside of this container is displayed as a slide -->
 		<div class="slides">
 			<section>
-				<h2 class="upholdHeader">Advanced</h2>
-				<h1 class="upholdHeader">React and Redux</h1>
-				<br>
-				<br>
-				<br>
-				<p>
-					<small><a href="http://thatjsdude.com">Jhankar Mahbub</a> / <a href="http://twitter.com/jsdude005">@jsdude005</a></small>
-				</p>
-				<p>
-					<small>www.thatjsdude.com</small>
-				</p>
-			</section>
-			<!-- <section>
-				<h2 class="upholdHeader">Exclusive</h2>
-				<h1 class="upholdHeader">React Training</h1>
+				<h2 class="upholdHeader">Data Visualization with</h2>
+				<h1 class="upholdHeader">React and D3</h1>
 				<br>
 				<br>
 				<br>
@@ -67,199 +54,126 @@
 				</p>
 			</section>
 			<section>
-				<h2>Hello There</h2>
-				<p>
-					<small>9.30-10.00am</small>
-				</p>
-				<ul>
-					<li>Get a cup of coffee</li>
-					<li>Grab a seat</li>
-					<li>Locate the power outlet</li>
-					<li>Ask for wi-fi Password</li>
-					<li>Tweet:@jsdude005 All set to rock React today</li>
-				</ul>
-			</section>
-			<section>
-				<h2>Equipments(!things needed)</h2>
-				<ul>
-					<li>Latest Node installed</li>
-					<li>Git installed</li>
-					<li>Visual Studio code
-						<ul>
-							<li>ReactJS code snippet</li>
-							<li>VSCode icons</li>
-						</ul>
-					</li>
-				</ul>
-			</section> -->
-			<section>
-				<h2>What we will talk</h2>
-				<ul>
-					<li>Reveiew of previous webinar</li>
-					<li>Router</li>
-					<li>Redux</li>
-					<li>External Library</li>
-					<li>React Native</li>
-				</ul>
-			</section>
-            <section>
-                <section>
-                    <h1>Routing</h1>
-                </section>
-                <section>
-                    <img src="./img/redux/restroom4.jpeg" alt="">
-                </section>
-                <section>
-                    <img src="./img/redux/restroom3.jpg" alt="">
-                </section>
-			</section>
-			<section>
 				<section>
-					<h1>ema-john</h1>
-					<h2>Architecture Review</h2>
-				</section>
-				<section><img src="./img/redux/structure1.png" alt=""></section>
-				<section><img src="./img/redux/structure2.png" alt=""></section>
-				<section><img src="./img/redux/structure3.png" alt=""></section>
-				<section><img src="./img/redux/structure5.png" alt=""></section>
-				<section><img sr
-					c="./img/redux/structure4.png" alt=""></section>
-				
-				<section>
-					<img src="./img/redux/superhero1.jpeg" alt="">
-					<p>To solve this problem, we need a super hero</p>
-				</section>
-			</section>
-            <section>
-                <section>
-					<h1>Redux</h1>
+					<h2>Who is</h2>
+					<h1>JS   Dude?</h1>
 				</section>
 				<section>
-					<h2>When to use Redux?</h2>
+					<img src="./img/others/dude.jpeg" alt="">
 					<ul>
-						<li>Large application with 5+ level deeper</li>
-						<li>5+ routes</li>
-						<li>Complex state</li>
-						<li>Larger team</li>
-						<li class="fragment purple">The demo app will not be a good practical redux</li>
+						<li style="color:purple"><strong>@jsdude005</strong></li>
+						<li>Organizer Chicago JavaScript meetup</li>
+						<li>Organize Chicago front end developers group</li>
+						<li>Giving talk all over the places</li>
+						<li>Came to Twin Cities code camp in 2013</li>
 					</ul>
 				</section>
 				<section>
-					<h2>Store</h2>
-					<ul>
-						<li>Holds application state</li>
-						<li>Only one store for all its application state</li>
-						<li>Single source of truth</li>
-					</ul>
+					<img src="./img/others/marathon.jpg" alt="">
 				</section>
 				<section>
-                    <img src="./img/redux/solve2.png" alt="">
-                </section>
-				<section>
-					<h2>Action</h2>
+					<p><strong>Take advantages</strong></p>
 					<ul>
-						<li>Actions</li>
-						<li>Action Creator</li>
-						
+						<li>Website: <strong style="color:purple">www.thatJSDude.com</strong></li>
+						<li>Worskhop on React, Angular, JS, Interview process</li>
+						<li>One to one training on career or any front end thing</li>
+						<li>Interview questions, Resume preparation </li>
 					</ul>
-					<pre><code class="hljs JavaScript">
-{
-  type: 'ADD_TODO',
-  text: 'Take 8 bathroom breaks'
-}
-					</code></pre>
-					<pre class="fragment"><code class="hljs javascript">
-const addTodo = text => ({
-    type: 'ADD_TODO',
-    text
-  })
-					</code></pre>
-					<li class="fragment">dispatch action</li>
-					<aside class="notes">
-						<p>Actions are plain JavaScript objects. Actions must have a type property that indicates the type of action being performed. </p>
-					</aside>
-				</section>
-                <section>
-					<h2>reducer</h2>
-					<ul>
-						<li>Actions describe the fact that something happened</li>
-						<li>Action don't specify how the application's state should change</li>
-						<li class="fragment">How state will change will be defined by <strong>reducer</strong></li>
-					</ul>
-					<pre class="fragment"><code>
-case ADD_TODO:
-      return [
-        ...state,
-        {
-          text: action.text,
-          completed: false
-        }
-      ]
-					</code></pre>
-                </section>
-                <section>
-					<h2>reducer</h2>
-					<img src="./img/redux/reducer.png" alt="">
-                </section>
-                <section>
-					<h2>Data Flow</h2>
-					<ul>
-						<li>An action is a plain object describing what happened</li>
-						<li class="fragment">You can call store.dispatch(action) from anywhere in your app</li>
-						<li class="fragment">Redux store calls the reducer function you gave for this action.</li>
-						<li class="fragment">In root reducer you may combine multiple reducers into a single state tree</li>
-						<li class="fragment">The Redux store saves the complete state tree returned by the root reducer</li>
-					</ul>
+					<img style="height:350px;" src="./img/others/thatconf.jpg" alt="">
 				</section>
 				
-            </section>
-			<section>
-				<section>
-					<h2>Implement Redux</h2>
-				</section>
-				<section>
-					<pre><code class="hljs javascript">
-	npm install --save redux
-	npm install --save react-redux
-					</code></pre>
-				</section>
-				<section>
-					<img src="./img/redux/containerComponent.png" alt="">
-					<p><small>ref: <a href="https://giamir.com/unit-testing-a-react-redux-app">unit test ract redux app</a></small></p>
-				</section>
-				<section>
-					<img src="./img/redux/smartcompoent.png" alt="">
-				</section>
 			</section>
 			<section>
-				<h1>Lets code Redux</h1>
-				<img src="./img/redux/redux.png" alt="">
-			</section>
-			<section>
-				<h2>Hello There</h2>
-				<p>
-					<small>9.30-10.00am</small>
-				</p>
+				<h2>Agenda</h2>
 				<ul>
-					<li>Get a cup of coffee</li>
-					<li>Grab a seat</li>
-					<li>Locate the power outlet</li>
-					<li>Ask for wi-fi Password</li>
-					<li>Tweet: All set to rock React today</li>
+					<li>React</li>
+					<li>JSX</li>
+					<li>Props</li>
+					<li>State</li>
 				</ul>
 			</section>
 			<section>
-				<h2>Equipments(!things needed)</h2>
+				<h2>Four core concepts</h2>
 				<ul>
-					<li>Latest Node installed</li>
-					<li>Git installed</li>
-					<li>Visual Studio code(optional)
-						<ul>
-							<li>extension</li>
-							<li></li>
-						</ul>
-					</li>
+					<li>Component</li>
+					<li>JSX</li>
+					<li>Props</li>
+					<li>State</li>
+					<li>D3</li>
+					<li>React and D3</li>
+					<li>react data vis libraries</li>
 				</ul>
+			</section>
+			<section>
+				<section>
+					<h1>Component</h1>
+				</section>
+				<section>
+					<h2>Component</h2>
+					<ul>
+						<li>Unit</li>
+						<li>Repeating</li>
+						<li>Grouping</li>
+						<li>Breaking Down</li>
+					</ul>
+				</section>
+				<section>
+					<img src="./img/koala.png" alt="">
+				</section>
+				<section>
+					<img src="./img/koala_detail.png" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>State and props</h2>
+				</section>
+				<section>	
+					<h2>Props:  pass data</h2>
+					<h3 class="fragment">State: data that might change</h3>
+				</section>
+				<section>
+					<img src="./img/propVsState.png" alt="">
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>bind</h1>
+				</section>
+				<section>
+					<img src="./img/bind1.png" alt="">
+				</section>
+				<section>
+					<img src="./img/bind2.png" alt="">
+				</section>
+				<section>
+					<img src="./img/bind3.png" alt="">
+				</section>
+				<section>
+					<img src="./img/bind4.png" alt="">
+				</section>
+			</section>
+			
+			<section>
+				<h2>component Life Cycle</h2>
+				<img src="./img/component-life-cycle.png" alt="">
+			</section>
+			<section>
+				<img src="./img/componentDataFlow.png" alt="">
+			</section>
+			<section>
+				<p><strong>React workshop</strong></p>
+				<ul>
+					<li>Build realistic website: <a href="https://ema-john.firebaseapp.com/">ema-john</a> </li>
+					<li>100% money back gurantee</li>
+					<li>20$ off if you sign up today</li>
+					<li>August 19 on minneapolis.</li>
+					<li>Just email: <strong style="color:purple">khan4019@gmail.com</strong></li>
+				</ul>
+				<img style="height:300px" src="./img/others/workshop1.JPG" alt="">
+				<aside class="notes">
+					<p>November 11 online</p>
+				</aside>
 			</section>
 
 			<!-- Example of nested vertical slides -->
