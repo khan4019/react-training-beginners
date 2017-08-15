@@ -44,7 +44,7 @@
 				<h2 class="upholdHeader">Data Visualization with</h2>
 				<h1 class="upholdHeader">React and D3</h1>
 				<br>
-				<p class="fragment"><a href="https://goo.gl/pdio1i">Just twitted the slides <strong style="color:purple">@jsdude005</strong></a></p>
+				<p class="fragment hide"><a href="https://goo.gl/pdio1i">Just twitted the slides <strong style="color:purple">@jsdude005</strong></a></p>
 				<br>
 				<br>
 				<p>
@@ -92,9 +92,10 @@
 					<section>
 						<h2>How many of you...</h2>
 						<ul>
-							<li>are front end developer?</li>
+							<li>are a front end developer?</li>
 							<li>used React?</li>
 							<li>developed data visualization with D3?</li>
+							<li>data scientist</li>
 							<li class="fragment">How many of you are here?</li>
 						</ul>
 					</section>
@@ -113,11 +114,19 @@
 					<h2>Getting started with React</h2>
 					<ul>
 						<li>4 steps to create react app</li>
-						<li>ES6</li>
-						<li>Component</li>
 					</ul>
+						<pre class="hljs"><code>
+npm install -g create-react-app
+
+create-react-app react-d3
+
+cd react-d3
+
+npm start
+						</code></pre>
+					
 				</section>
-				<section>
+				<!-- <section>
 					<h2>React Core Concepts</h2>
 					<ul>
 						<li>JSX</li>
@@ -134,7 +143,7 @@
 						<li>Using data vis libraries</li>
 						<li>Plain D3</li>
 					</ul>
-				</section>
+				</section> -->
 			</section>
 			
 			<section>
@@ -195,187 +204,19 @@
 				<img src="./img/componentDataFlow.png" alt="">
 			</section>
 			<section>
-				<h2><strong>React workshop</strong></h2>
+				<h2>Learn react by building</h2>
 				<ul>
-					<li>Build realistic website: <a href="https://ema-john.firebaseapp.com/">ema-john</a> </li>
-					<li>100% money back gurantee</li>
-					<li>August 19 on minneapolis.</li>
-					<li>Just email: <strong style="color:purple">khan4019@gmail.com</strong></li>
+					<li><a href="http://thatjsdude.com/workshops/react/mn.html">ReactJS Workshop for beginners</a></li>
+					<li>Build an <a href="https://ema-john.firebaseapp.com/">e-commerce site</a> </li>
+					<li>Email: <span style="color:lightcoral">khan4019@gmail.com</span> </li>
 				</ul>
-				<img style="height:300px" src="./img/others/workshop1.JPG" alt="">
-				<aside class="notes">
-					<p>November 11 online</p>
-				</aside>
-			</section>
-
-			<!-- Example of nested vertical slides -->
-			<section>
-				<section>
-					<h1>My day with React</h1>
-				</section>
-				<section>
-					<h2>Session 1</h2>
-					<p>Build React without understanding anything.</p>
-					<ul>
-						<li>Google: <code>Install React</code></li>
-						<li>Add then go to <a href="https://facebook.github.io/react/docs/installation.html">here</a></li>
-						<li><a href="https://facebook.github.io/react/downloads/single-file-example.html">Download this HTML file</a></li>
-						<li>Open it in you code editor</li>
-					</ul>
-				</section>
-				<section>
-					<h2>What we needed</h2>
-					<ol>
-						<li>Three dependencies
-							<ul>
-								<li>React</li>
-								<li>React DOM</li>
-								<li>Babel</li>
-							</ul>
-						</li>
-						<li class="fragment"><code>&lt;div id="root"&gt;&lt;/div&gt;</code></li>
-						<li class="fragment">&lt;script type=&quot;text/babel&quot;&gt;&lt;/script&gt;</li>
-						<li class="fragment">Open the file in the browser</li>
-						<li class="fragment">Delete everything inside script tag</li>
-					</ol>
-				</section>
-				<section>
-					<h2>For Hello React</h2>
-					<ul>
-						<li class="fragment">Three libraries
-							<ul>
-								<li>React</li>
-								<li>React DOM</li>
-								<li>Babel</li>
-							</ul>
-						</li>
-						<li class="fragment">Component
-							<ul>
-								<li>ES6</li>
-								<li>render</li>
-								<li>JSX</li>
-							</ul>
-						</li>
-						<li class="fragment ">Mount Component on index.html</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Why React and React-DOM?</h2>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</section>
+				<img style="height:350px;" src="./img/others/workshop1.jpg" alt="">
 			</section>
 			<section>
-				<section>
-					<h1>Component</h1>
-				</section>
-				<section>
-					<h2>What is a component</h2>
-				</section>
-				<section>
-					<img src="./img/koala.png" alt="">
-				</section>
-				<section>
-					<ul>
-						<li>Repeatable unit</li>
-						<li>Grouping</li>
-						<li>Organizing Unit</li>
-					</ul>
-				</section>
-				<section>
-					<h2>Code a few more component</h2>
-				</section>
-				<section>
-
-				</section>
-				<section>
-					<h2>How React will communicate?</h2>
-				</section>
-			</section>
-
-			<section>
-				<h2></h2>
-			</section>
-
-			<section>
-
-			</section>
-
-			<section>
-
-			</section>
-
-			<section>
-
-			</section>
-
-			<section>
-				<h2>Transition Styles</h2>
-
-			</section>
-
-			<section>
-
-			</section>
-
-			<section>
-
-			</section>
-
-
-			<section>
-				<h2>Pretty Code</h2>
-				<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-				<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-			</section>
-
-
-
-			<section>
-				<h2>Clever Quotes</h2>
-				<p>
-					These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-				</p>
-				<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-					&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would reproduce
-					the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-				</blockquote>
-			</section>
-
-			<section>
-				<h2>Take a Moment</h2>
-				<p>
-					Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting
-					slides off the screen.
-				</p>
-			</section>
-
-			<section>
-				<h1>THE END</h1>
-				<p>
-					- <a href="http://slides.com">Try the online editor</a> <br> - <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-				</p>
+				<h1>Thank you</h1>
+				<p>Email: <span style="color:lightcoral">khan4019@gmail.com</span></p>
+				<p><strong style="color:purple">@jsdude005</strong></p>
+				<p><small >www.thatJSDude.com</small></p>
 			</section>
 
 		</div>
