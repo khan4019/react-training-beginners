@@ -10,32 +10,32 @@ const getUser = () => {
 }
 
 
-const getDataKey = () => {
+const getDatabaseId = () => {
     const userId = getUser();
     return `emaJohn/carts/${userId}`
 }
 
 // push to local storage: a temporary place for database
 const getDatabaseCart = () => {
-    const dataKey = getDataKey();
-    const data = localStorage.getItem(dataKey) || "{}";
+    const databaseId = getDatabaseId();
+    const data = localStorage.getItem(databaseId) || "{}";
     return JSON.parse(data);
 }
 
-const addToDatabaseCart = (key, count) => {
+const addToDatabaseCart = (id, count) => {
     const currentCart = getDatabaseCart();
-    currentCart[key] = count;
-    localStorage.setItem(getDataKey(), JSON.stringify(currentCart));
+    currentCart[id] = count;
+    localStorage.setItem(getDatabaseId(), JSON.stringify(currentCart));
 }
 
-const removeFromDatabaseCart = key => {
+const removeFromDatabaseCart = id => {
     const currentCart = getDatabaseCart();
-    delete currentCart[key];
-    localStorage.setItem(getDataKey(), JSON.stringify(currentCart));
+    delete currentCart[id];
+    localStorage.setItem(getDatabaseId(), JSON.stringify(currentCart));
 }
 
 const processOrder = (cart) => {
-    localStorage.removeItem(getDataKey());
+    localStorage.removeItem(getDatabaseId());
 }
 
 
